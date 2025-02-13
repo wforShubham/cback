@@ -36,7 +36,7 @@ router.post("/forget-password", async (req, res) => {
             from: process.env.EMAIL_USER,
             to: email,
             subject: "Reset Your Password",
-            text: `Click the link below to reset your password:\n\nhttps://codenote-j0f7.onrender.com/reset-password/${user._id}/${encodeURIComponent(token)}\n\nThis link expires in 24 hours.`,
+            text: `Click the link below to reset your password:\n\nhttps://codenote-j0f7.onrender.com/#/reset-password/${user._id}/${encodeURIComponent(token)}\n\nThis link expires in 24 hours.`,
         };
 
         // Send email and wait for response
