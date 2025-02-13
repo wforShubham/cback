@@ -1,7 +1,7 @@
 {
-  "name": "inotebook-backend",
+  "name": "codenote-backend",
   "version": "1.0.0",
-  "description": "iNotebook - Your notebook on the cloud",
+  "description": "CodeNote - Your Codes on the cloud",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.3.1",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "express": "^4.17.1",
