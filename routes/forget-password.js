@@ -23,8 +23,6 @@ router.post("/forget-password", async (req, res) => {
         // Generate JWT Token (Valid for 1 day)
         const token = jwt.sign({ id: user._id }, JWT_SECRET, { expiresIn: "1d" });
 
-        console.log("Generated Token:" + token); 
-
         // ✅ Use async/await for sending email
         const transporter = nodemailer.createTransport({
             service: "gmail",
