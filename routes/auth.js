@@ -58,7 +58,7 @@ router.post('/createuser', [
         });
 
         // Send verification email
-        const verificationLink = `http://localhost:3000/verify-email/${verificationToken}`;
+        const verificationLink = `https://codenote-j0f7.onrender.com/#/verify-email/${verificationToken}`;
         const message = `<p>Click <a href="${verificationLink}">here</a> to verify your email.</p>`;
         await sendEmail(req.body.email, "Verify Your Email", message);
 
