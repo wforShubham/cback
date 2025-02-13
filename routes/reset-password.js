@@ -33,7 +33,7 @@ router.post(
       const encodedToken = encodeURIComponent(token);
 
       // Send reset email (Replace with actual email logic)
-      const resetLink = `http://localhost:3000/reset-password/${user._id}/${encodedToken}`;
+      const resetLink = `https://codenote-j0f7.onrender.com/${user._id}/${encodedToken}`;
       console.log("Reset Link:", resetLink);
 
       res.json({ message: "Check your email for password reset link", resetLink });
