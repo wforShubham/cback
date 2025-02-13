@@ -8,7 +8,6 @@ const User = require('./models/User');
 connectToMongo();
 const app = express();
 const port = process.env.PORT_BACKEND || 5000;
-const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 
 // Enable CORS
 app.use(
