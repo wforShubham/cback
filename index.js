@@ -2,7 +2,6 @@ require("dotenv").config();
 const connectToMongo = require("./db");
 const express = require("express");
 const cors = require("cors");
-const { OAuth2Client } = require("google-auth-library");
 const jwt = require("jsonwebtoken");
 const User = require('./models/User');
 
