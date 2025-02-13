@@ -32,7 +32,7 @@ router.post('/createuser', [
                 await user.save();
 
                 // Resend verification email
-                const verificationLink = `http://localhost:3000/verify-email/${user.verificationToken}`;
+                const verificationLink = `https://codenote-j0f7.onrender.com/#/verify-email/${user.verificationToken}`;
                 const message = `<p>Click <a href="${verificationLink}">here</a> to verify your email.</p>`;
                 await sendEmail(req.body.email, "Verify Your Email", message);
 
