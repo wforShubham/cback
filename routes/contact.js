@@ -21,7 +21,7 @@ router.get('/messages', cn, checkAdmin, async (req, res) => {
 router.post('/submit', [
     body('name', 'Name must be at least 3 characters long').isLength({ min: 3 }).trim().escape(),
     body('email', 'Enter a valid email').isEmail().normalizeEmail(),
-    body('message', 'Message must be at least 1 characters long').isLength({ min: 1 }).trim().escape()
+    body('message', 'Message must be at least 0 characters long').isLength({ min: 0 }).trim().escape()
 ], async (req, res) => {
     try {
         const errors = validationResult(req);
