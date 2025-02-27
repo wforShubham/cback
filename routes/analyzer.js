@@ -6,6 +6,7 @@ const cn = require("../middleware/cn");
 const router = express.Router();
 
 router.post("/analyze-complexity", cn, async (req, res) => {
+  console.log("pohoch gaya")
   try {
     const { code } = req.body;
 
