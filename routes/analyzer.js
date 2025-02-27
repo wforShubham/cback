@@ -29,6 +29,7 @@ router.post("/analyze-complexity", cn, async (req, res) => {
     });
 
     const data = await response.json();
+    console.log(data)
     res.json({ complexity: data.choices[0]?.message?.content || "Analysis failed" });
   } catch (error) {
     console.error("Error analyzing complexity:", error);
