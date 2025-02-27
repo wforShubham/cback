@@ -1,6 +1,5 @@
 require("dotenv").config();
 const express = require("express");
-const fetch = require("node-fetch");
 const cn = require("../middleware/cn");
 
 const router = express.Router();
