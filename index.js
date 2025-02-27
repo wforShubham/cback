@@ -28,6 +28,7 @@ app.use("/api/compiler", require("./routes/compiler"));
 app.use("/api/", require("./routes/forget-password"));
 app.use("/api/", require("./routes/reset-password"));
 app.use("/api/", require("./routes/user-role"));
+app.use("/api/", require("./routes/analyzer"));
 
 
 // Handle 404 errors
