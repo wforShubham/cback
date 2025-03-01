@@ -18,7 +18,7 @@ const server = http.createServer(app);
 // Enable CORS
 app.use(
   cors({
-    origin: "http://localhost:3000", // Allow only frontend port
+    origin: "https://codenote-j0f7.onrender.com", // Allow only frontend port
     credentials: true, // If handling cookies or tokens
   })
 );
