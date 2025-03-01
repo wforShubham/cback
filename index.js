@@ -7,7 +7,6 @@ const jwt = require("jsonwebtoken");
 const User = require("./models/User");
 const http = require("http");
 const { Server } = require("socket.io");
-const axios = require("axios");
 const ACTIONS = require("./Actions");
 
 connectToMongo();
