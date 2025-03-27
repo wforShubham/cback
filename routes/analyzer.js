@@ -16,7 +16,7 @@ router.post("/analyze-complexity", cn, async (req, res) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        model: "google/gemini-2.0-pro-exp-02-05:free",
+        model: "google/gemini-2.5-pro-exp-03-25:free",
         messages: [
           {
             role: "user",
